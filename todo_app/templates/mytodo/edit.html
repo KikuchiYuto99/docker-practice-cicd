@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}
+- Edit Task -
+{% endblock %}
+
+{% block contents %}
+<div class="edit">
+
+    <h1>Edit Task</h1>
+
+    <form action="{% url 'edit_task' task.id %}" method="post">
+        <div class="div">
+            {% csrf_token %}
+        </div>
+
+        {{ form.as_p }}
+
+        <div class="div">
+            <button type="submit">編集</button>
+        </div>
+    </form>
+    
+    <div clas="div">
+        <a href="{% url 'index' %}">戻る</a>
+    </div>
+</div>
+{% endblock %}

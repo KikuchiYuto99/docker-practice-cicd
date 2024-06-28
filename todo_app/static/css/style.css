@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    padding: 50px 250px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+li {
+    padding: 10px 20px;
+}
+
+.index a {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: rgb(160, 0, 160);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.index a:hover {
+    background-color: rgb(128, 1, 128);
+}
+
+.index ul {
+    list-style-type: none;
+}
+
+.index li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.index li.complete {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.index .delete {
+    padding: 8px 13px;
+    font-size: 15px;
+    border-radius: 4px;
+    border-color: rgb(160, 0, 160);
+    color: #fff;
+    background-color: rgb(160, 0, 160);
+}
+
+.index .delete:hover {
+    background-color: rgb(128, 1, 128);
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.task-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.task-date {
+    font-size: 14px;
+    color: #666;
+}
+
+.task-description {
+    font-size: 16px;
+}
+
+.add {
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.add form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.add form input,
+.add form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.add form button {
+    background-color: rgb(160, 0, 160);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add form button:hover {
+    background-color: rgb(128, 1, 128);
+}
+
+.add .field-error {
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.edit .div {
+    margin: 30px 0;
+}
